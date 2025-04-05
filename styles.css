@@ -1,0 +1,472 @@
+:root {
+    --primary: #9d2235;
+    --secondary: #ffcc33;
+    --light: #f9f7f3;
+    --dark: #333333;
+    --accent: #4b7f52;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    color: var(--dark);
+    background-color: var(--light);
+}
+
+.container {
+    width: 95%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header {
+    background-color: var(--primary);
+    color: white;
+    padding: 12px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 25L60 40H40L50 25z M50 75L40 60H60L50 75z M25 50L40 40V60L25 50z M75 50L60 60V40L75 50z' fill='%23ffcc33' fill-opacity='0.2'/%3E%3C/svg%3E");
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.gold-text {
+    color: var(--secondary);
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('banner.jpg') center/cover;
+    padding: 60px 0;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--secondary);
+    color: var(--dark);
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: #e6b800;
+    transform: translateY(-2px);
+}
+
+.countdown-container {
+    background-color: var(--primary);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+.countdown-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 15L36 24H24L30 15z M30 45L24 36H36L30 45z M15 30L24 24V36L15 30z M45 30L36 36V24L45 30z' fill='%23ffcc33' fill-opacity='0.2'/%3E%3C/svg%3E");
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.countdown-content {
+    position: relative;
+    z-index: 1;
+}
+
+.countdown-title {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 70px;
+}
+
+.countdown-value {
+    font-size: 1.8rem;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 8px;
+    min-width: 70px;
+    margin-bottom: 3px;
+}
+
+.countdown-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.section {
+    padding: 30px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background-color: var(--primary);
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-title {
+    color: var(--primary);
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+
+.card-title span {
+    background-color: var(--primary);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.5 10.5L25.5 20.5H15.5L20.5 10.5z' fill='%239d2235' fill-opacity='0.05'/%3E%3C/svg%3E");
+    z-index: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.prizes-card {
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.prizes-card:hover {
+    transform: translateY(-3px);
+}
+
+.prizes-card-title {
+    color: var(--primary);
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.prizes-icon {
+    font-size: 2.5rem;
+    color: var(--secondary);
+    margin-bottom: 10px;
+}
+
+.border-pattern {
+    height: 8px;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='10' viewBox='0 0 60 10' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 5 L10 0 L20 5 L30 0 L40 5 L50 0 L60 5' stroke='%239d2235' stroke-width='1' fill='none'/%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    margin: 25px 0;
+}
+
+.donate-leaderboard-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.form-text {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.char-counter {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.leaderboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.leaderboard-header {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 2px solid var(--primary);
+}
+
+.leaderboard-header-right {
+    text-align: right;
+    padding: 8px;
+    border-bottom: 2px solid var(--primary);
+}
+
+.leaderboard-cell {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.leaderboard-cell-right {
+    text-align: right;
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.how-it-works-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.message-item {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.message-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.message-address {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: var(--primary);
+}
+
+.message-amount {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 992px) {
+    .donate-leaderboard-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .countdown-item {
+        min-width: 60px;
+    }
+    
+    .countdown-value {
+        font-size: 1.4rem;
+        min-width: 60px;
+    }
+    
+    .section {
+        padding: 25px 0;
+    }
+    
+    .prizes-card {
+        margin-bottom: 15px;
+    }
+}
+
+.footer {
+    background-color: var(--primary);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 12px 0;
+    font-size: 0.85rem;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.meme-carousel-section {
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.meme-carousel-container {
+    width: 100%;
+    height: 250px; /* Fixed height - adjust as needed */
+    overflow: hidden;
+    position: relative;
+}
+
+.meme-carousel {
+    display: flex;
+    height: 100%;
+    width: max-content;
+    animation: infiniteScroll 20s linear infinite;
+}
+
+.meme-carousel:hover {
+    animation-play-state: paused; /* Pause on hover */
+}
+
+.meme-item {
+    flex: 0 0 auto;
+    height: 100%;
+    margin: 0 10px;
+}
+
+.meme-item img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes infiniteScroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        /* This should be exactly the width of your primary set of images */
+        transform: translateX(calc(-100% / 2));
+    }
+}
+
+/* Optional: add a gradient fade effect on the sides */
+.meme-carousel-container::before,
+.meme-carousel-container::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.meme-carousel-container::before {
+    left: 0;
+    background: linear-gradient(to right, var(--light), transparent);
+}
+
+.meme-carousel-container::after {
+    right: 0;
+    background: linear-gradient(to left, var(--light), transparent);
+}
