@@ -103,7 +103,13 @@ const updateDonors = async function () {
 
   // Force highest donor to top.
   let rank = 1;
-  const highestDonor = await charity.highestDonor();
+  let highestDonor = await charity.highestDonor();
+  try {
+    const name = await provider.lookupAddress(highestDonor);
+    if (name) {
+      highestDonor = name;
+    }
+  } catch (_) {};
   leaderboardContent += `
   <tr>
     <td class="leaderboard-cell">${rank}</td>
