@@ -1,6 +1,6 @@
 // Set the countdown dates.
-const countdownDate = new Date('April 4, 2025 12:00:00 EDT').getTime();
-const auctionEndDate = new Date('April 13, 2025 12:00:00 EDT').getTime();
+const countdownDate = new Date('April 6, 2025 17:00:00 EDT').getTime();
+const auctionEndDate = new Date('April 13, 2025 17:00:00 EDT').getTime();
 
 // Retrieve DOM elements.
 const donationForm = document.getElementById('donations-section');
@@ -33,7 +33,7 @@ const paint = function () {
     if (now < countdownDate) {
         distance = countdownDate - now;
         phaseText = 'Auction begins in:';
-        auctionStatus.innerText = 'Auction opens Sunday, April 6th at 12:00pm Eastern Time (UTC -4).';
+        auctionStatus.innerText = 'Auction opens Sunday, April 6th at 5:00pm Eastern Time (UTC -4).';
         donationForm.style.display = 'none';
         donationBorder.style.display = 'none';
         messagesForm.style.display = 'none';
@@ -43,7 +43,7 @@ const paint = function () {
     } else if (now < auctionEndDate) {
         distance = auctionEndDate - now;
         phaseText = 'Auction ends in:';
-        auctionStatus.innerText = 'Auction closes Sunday, April 13th at 12:00pm Eastern Time (UTC - 4).';
+        auctionStatus.innerText = 'Auction closes Sunday, April 13th at 5:00pm Eastern Time (UTC - 4).';
         donationRunning.style.display = 'visible';
         donationEnded.style.display = 'none';
         donationForm.style.display = 'block';
