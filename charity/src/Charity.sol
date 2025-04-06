@@ -34,7 +34,8 @@ interface IERC721 {
   @author Tim Clancy <tim-clancy.eth>
   @custom:terry "... that act caused God to reveal Himself to me and saved me."
 
-  Donate to support earthquake relief in Myanmar. I did not optimize this.
+  Donate to support earthquake relief in Myanmar.
+  I did not optimize this contract.
 
   @custom:date April 5th, 2025.
 */
@@ -241,6 +242,11 @@ contract Charity is Ownable, ReentrancyGuard {
       revert TooEarly();
     }
 
+    // Only permit settling if the committed block has passed.
+    if (block.number < committedBlock) {
+      revert TooEarly();
+    }
+
     // Require that a committed random block be in range.
     if (block.number > committedBlock + 256) {
       revert TooLate();
@@ -252,7 +258,7 @@ contract Charity is Ownable, ReentrancyGuard {
     uint256 accumulator = random % totalDonations;
     for (uint256 i = 0; i < donors.length; ++i) {
       address donor = donors[i];
-      if (accumulator < donations[donor) {
+      if (accumulator < donations[donor]) {
         raffleWinner = donor;
         break;
       }

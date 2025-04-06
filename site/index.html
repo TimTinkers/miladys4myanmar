@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miladys for Myanmar - Charity Auction & Raffle</title>
+    <title>Miladys for Myanmar - Charity & Raffle</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -23,7 +23,7 @@
     <section class="hero">
         <div class="container">
             <h1>Miladys for Myanmar Earthquake Relief</h1>
-            <p>Join our charity auction and raffle to help those affected by the recent earthquake in Myanmar. Donate now for a chance to win prizes while supporting a crucial cause.</p>
+            <p>Join our charity drive and raffle to help those affected by the recent earthquake in Myanmar. Donate now for a chance to win prizes while supporting a crucial cause.</p>
         </div>
     </section>
     
@@ -55,36 +55,33 @@
     <section class="section" id="donations-section">
         <div class="container">
             <div class="donations-container">
-                <!-- Donation Form Column -->
                 <div>
                     <h2 class="section-title">Donate</h2>
                     <div class="card" id="running-card">
-                        <p><strong>The auction is live!</strong> Your Ether donation will support emergency relief efforts for those affected by the devastating earthquake in Myanmar.</p>
+                        <p><strong>The donation drive is live!</strong> Your Ether donation will support emergency relief efforts for those affected by the devastating earthquake in Myanmar.</p>
                         <br/>
-                        <p>The highest donor will win the Milady auction prize, and everyone who donates has a chance to win the raffled grand prize!</p>
+                        <p>The highest donor will win the Milady donor prize, and everyone who donates has a chance to win, proportional to their total donations, the raffled grand prize!</p>
                         <br/>
                         <div id="donation-form">
-                            <form>
-                                <div class="form-group">
-                                    <label for="amount" class="form-label">Donation Amount (ETH)</label>
-                                    <input type="number" id="amount" name="amount" min="0.01" step="0.01" value="0.05" class="form-control" required>
-                                    <p class="form-text">Auction extension minimum: 0.05 ETH</p>
-                                </div>
-                                <div class="form-group">
-                                    <label for="message" class="form-label">Message</label>
-                                    <textarea id="message" name="message" rows="2" maxlength="140" class="form-control"></textarea>
-                                    <div class="char-counter">
-                                        <span id="char-count">0</span>/140
-                                    </div>
-                                </div>
-                                <button type="submit" class="btn" style="width: 100%;">Connect Wallet & Donate</button>
-                                <p style="margin-top: 15px; font-size: 0.9rem; text-align: center;">All proceeds go directly via Friends of Pariaman (an American 501(c)(3) registered non-profit) to local, non-dictatorship earthquake relief efforts in Myanmar.</p>
-                            </form>
+                          <div class="form-group">
+                              <label for="amount" class="form-label">Donation Amount (ETH)</label>
+                              <input type="number" id="amount" name="amount" min="0.01" step="0.01" value="0.01" class="form-control" required>
+                              <p class="form-text">Drive extension minimum: 0.01 ETH</p>
+                          </div>
+                          <div class="form-group">
+                              <label for="message" class="form-label">Message</label>
+                              <textarea id="message" name="message" rows="2" maxlength="140" class="form-control">milady</textarea>
+                              <div class="char-counter">
+                                  <span id="char-count">0</span>/140
+                              </div>
+                          </div>
+                          <button id="donate-button" class="btn" style="width: 100%;">Connect Wallet & Donate</button>
+                          <p style="margin-top: 15px; font-size: 0.9rem; text-align: center;">All proceeds go directly via Friends of Pariaman (an American 501(c)(3) registered non-profit) to local, non-dictatorship earthquake relief efforts in Myanmar.</p>
                         </div>
                     </div>
                     <div class="card" id="ended-card">
                       <p>
-                        The auction has ended; thank you so much for your participation! If you are still interested in donating please consider doing so via <a href="https://www.myanmarearthquakehelp.com/en/donate">Myanmar Earthquake Relief</a>, a fund of Friends of Pariaman (an American 501(c)(3) registered non-profit) to local, non-dictatorship earthquake relief efforts in Myanmar. This is a group of Burmese diaspora that we personally trust. 
+                        The donation drive has ended; thank you so much for your participation! If you are still interested in donating please consider doing so via <a href="https://www.myanmarearthquakehelp.com/en/donate">Myanmar Earthquake Relief</a>, a fund of Friends of Pariaman (an American 501(c)(3) registered non-profit) to local, non-dictatorship earthquake relief efforts in Myanmar. This is a group of Burmese diaspora that we personally trust. 
                       </p>
                     </div>
                 </div>
@@ -101,12 +98,6 @@
                                 </tr>
                             </thead>
                             <tbody id="leaderboard-body">
-                                <!-- Demo data -->
-                                <tr>
-                                    <td class="leaderboard-cell">1</td>
-                                    <td class="leaderboard-cell">0x1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s0t</td>
-                                    <td class="leaderboard-cell-right">2.5</td>
-                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -188,30 +179,30 @@
               </p>
               <br/>
               <p>
-                In the ruins of the earthquake, while people are sobbing over the dead, Min Aung Hlaing continued bombing. That's why we're throwing a Milady charity auction: every bid helps survivors and supports the people who refused to bow. Courage is our favorite virtue.
+                In the ruins of the earthquake, while people are sobbing over the dead, Min Aung Hlaing continued bombing. That's why we're throwing a Milady charity donation drive: every donation helps survivors and supports the people who refused to bow. Courage is our favorite virtue.
               </p>
             </div>
             <div class="how-it-works-grid">
                 <div class="card">
                     <h3 class="card-title"><span>1</span>Countdown</h3>
-                    <p>The charity auction will officially begin at 5:00pm Eastern Time (UTC -4) on Sunday, April 6th. When the countdown reaches zero, the one-week donation period begins.</p>
+                    <p>The charity drive will officially begin at 5:00pm Eastern Time (UTC -4) on Sunday, April 6th. When the countdown reaches zero, the one-week donation period begins.</p>
                 </div>
                 <div class="card">
-                    <h3 class="card-title"><span>2</span>Auction Week</h3>
-                    <p>For one week, you can make donations through this website. Every donation counts towards both the auction and the raffle. Bids of 0.5 ETH or greater within the final 30 minutes of the auction extend the auction by 30 minutes.</p>
+                    <h3 class="card-title"><span>2</span>Donation Week</h3>
+                    <p>For one week, you can make donations through this website. Every donation counts towards both the donor prize and the raffle. Donations of 0.01 ETH or greater within the final 15 minutes of the donation drive extend the drive by 15 minutes.</p>
                 </div>
                 <div class="card">
                     <h3 class="card-title"><span>3</span>Winner</h3>
-                    <p>When the auction ends, the donor who contributed the highest amount will automatically win the auction prize.</p>
+                    <p>When the donation drive ends, the donor who contributed the highest amount will automatically win the donor prize.</p>
                 </div>
                 <div class="card">
                     <h3 class="card-title"><span>4</span>Raffle</h3>
-                    <p>When the auction ends, a secure random raffle contract will automatically give the winner their grand prize. Your chances of winning are proportional to your total donation amount. The more you donate, the better your chances of winning!</p>
+                    <p>When the drive ends, a secure random raffle contract will automatically give the winner their grand prize. Your chances of winning are proportional to your total donation amount. The more you donate, the better your chances of winning!</p>
                 </div>
             </div>
             <div class="card">
               <p>
-              All donations from this auction and raffle will be trustlessly routed through <a href="https://www.myanmarearthquakehelp.com/en/donate">Myanmar Earthquake Relief</a>, a fund of Friends of Pariaman (an American 501(c)(3) registered non-profit) to local, non-dictatorship earthquake relief efforts in Myanmar. This is a group of Burmese diaspora that we personally trust.
+              All donations from this drive and raffle will be trustlessly routed through <a href="https://www.myanmarearthquakehelp.com/en/donate">Myanmar Earthquake Relief</a>, a fund of Friends of Pariaman (an American 501(c)(3) registered non-profit) to local, non-dictatorship earthquake relief efforts in Myanmar. This is a group of Burmese diaspora that we personally trust.
               </p>
             </div>
         </div>
@@ -225,12 +216,12 @@
             <div class="grid">
                 <div class="prizes-card">
                     <div class="prizes-icon">
-                        <img src="auction.png" alt="Auction Prize" style="border-radius: 10px; max-width: 200px;">
+                        <img src="auction.png" alt="Donor Prize" style="border-radius: 10px; max-width: 200px;">
                     </div>
-                    <h3 class="prizes-card-title">Auction Milady</h3>
+                    <h3 class="prizes-card-title">Donor Milady</h3>
                     <p><strong>Goes to the highest donor!</strong></p>
                     <p>
-                      This beautiful Milady will automatically transfer to the highest donor upon conclusion of the charity auction. We are sure that someone with a heart of gold like yourself will take care of her.</p>
+                      This beautiful Milady will automatically transfer to the highest donor upon conclusion of the charity drive. We are sure that someone with a heart of gold like yourself will take care of her.</p>
                 </div>
                 <div class="prizes-card">
                     <div class="prizes-icon">
@@ -239,7 +230,7 @@
                     <h3 class="prizes-card-title">Raffle Milady</h3>
                     <p><strong>Goes to the raffle winner!</strong></p>
                     <p>
-                      This other beautiful Milady will automatically transfer to our raffle winner upon conclusion of the charity auction. In addition to this Milady, the raffle winner will receive bonus prizes from our partner sponsors!
+                      This other beautiful Milady will automatically transfer to our raffle winner upon conclusion of the charity drive. In addition to this Milady, the raffle winner will receive bonus prizes from our partner sponsors!
                     </p>
                 </div>
                 <div class="prizes-card">
@@ -249,7 +240,7 @@
                     <h3 class="prizes-card-title">Raffle Sigil Indulgence</h3>
                     <p><strong>Goes to the raffle winner!</strong></p>
                     <p>
-                      Sigil is an ethical, aligned Ethereum rollup for the ensouled. This raffle prize is a Grand Indulgence, a one-time consumable for atonement. This rarity allows the holder to absolve themselves of their crimes against the ethos of our Blessed Ethereum World Machine.
+                      Sigil is an ethical, aligned Ethereum rollup for the ensouled. This raffle prize is a Grand Indulgence, a one-time consumable for atonement. This rarity allows the holder to absolve themselves of their crimes against the ethos of our Blessed Ethereum World Machine. We will deliver this prize to the raffle winner out-of-band.
                     </p>
                 </div>
             </div>
@@ -263,14 +254,6 @@
             <h2 class="section-title">Donation Messages</h2>
             <div class="card" style="padding: 0;">
                 <div id="messages-container">
-                    <!-- Demo messages -->
-                    <div class="message-item">
-                        <div class="message-header">
-                            <div class="message-address">0x9s8r7q...2b1a0</div>
-                            <div class="message-amount">0.8 ETH</div>
-                        </div>
-                        <p>Supporting the relief efforts. Hope this helps!</p>
-                    </div>
                 </div>
             </div>
         </div>
@@ -282,6 +265,6 @@
         </div>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script type="module" src="scripts.js"></script>
 </body>
 </html>
