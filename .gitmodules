@@ -1,0 +1,9 @@
+[submodule "charity/lib/forge-std"]
+	path = charity/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "charity/lib/solady"]
+	path = charity/lib/solady
+	url = https://github.com/vectorized/solady
+[submodule "charity/lib/soledge"]
+	path = charity/lib/soledge
+	url = https://github.com/vectorized/soledge

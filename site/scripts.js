@@ -1,5 +1,5 @@
 // Set the countdown dates.
-const countdownDate = new Date('April 6, 2025 12:00:00 EDT').getTime();
+const countdownDate = new Date('April 4, 2025 12:00:00 EDT').getTime();
 const auctionEndDate = new Date('April 13, 2025 12:00:00 EDT').getTime();
 
 // Retrieve DOM elements.

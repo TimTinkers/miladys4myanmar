@@ -1,0 +1,15 @@
+{
+  "name": "raffle-evaluator",
+  "version": "1.0.0",
+  "description": "Test some raffle math.",
+  "license": "AGPL-3.0-only",
+  "author": "Tim Clancy <tim-clancy.eth>",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ethers": "^5.8.0"
+  }
+}
